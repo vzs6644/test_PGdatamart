@@ -1,12 +1,14 @@
 # Read data from mysql - transactionsync, create a dataframe out of it
 # Add a column 'ins_dt' - current_date()
 # write the dataframe in s3 partitioned by ind_dt
+# just a test comment
 
 from pyspark.sql import SparkSession
 from pyspark.sql.functions import *
 import yaml
 import os.path
 import utils.aws_utils as ut
+
 
 if __name__ == '__main__':
     os.environ["PYSPARK_SUBMIT_ARGS"] = (
